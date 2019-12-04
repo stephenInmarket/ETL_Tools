@@ -26,7 +26,7 @@ python FileCombiner.py --sourceDir ./raw_dump --destinationDir ./final_dump --sh
   - => ./temp (liveramp*datetime*)
   - move => ./shard (file A, file C)
 - when file size up to 4GB
-- ./temp (liveramp*datetime*) move ./final_dump (liveramp*datetime*) 
+- ./temp (liveramp*datetime*) move => ./final_dump (liveramp*datetime*) 
 
 ## Arguments
 

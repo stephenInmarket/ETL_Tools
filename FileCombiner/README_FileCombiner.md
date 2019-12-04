@@ -14,12 +14,12 @@ know python to utilize this script.
 
 ## Example Usage
 Files are being dumped into a folder called raw_dump. They need to be combined
-into 4 GB files, named lavalamp and timestamped. The final file should be
+into 4 GB files, named liveramp and timestamped. The final file should be
 placed into final_dump
 
 
 ```bash
-python FileCombiner.py --sourceDir ./raw_dump --destinationDir ./final_dump --fileExt gz --destinationFileName lavalamp --sizeUnit GB --sizeLimit 4 --temporaryDir ./temp
+python FileCombiner.py --sourceDir ./raw_dump --destinationDir ./final_dump --fileExt gz --destinationFileName liveramp --sizeUnit GB --sizeLimit 4 --temporaryDir ./temp
 ```
 
 ## Arguments
@@ -31,7 +31,7 @@ Additional arguments can be added to the command above with a -- following the a
 | sourceDir | Source location of files to combine | ./raw_dump |
 | destinationDir | Location of the final combined file | ./final_dump |
 | fileExt | This is the file type | csv, gz, or True to mean any type |
-| destinationFileName | The name of the final combined file | lavalamp or None (default) to mean the source file name |
+| destinationFileName | The name of the final combined file | liveramp or None (default) to mean the source file name |
 | recurSearch | Look in subfolders | True to look in subfolders or False (default) to not look in subfolders |
 | sizeLimit | The numerical size limit of the final file | 2 (default) or any natural number |
 | sizeUnit | The unit of the size from sizeLimit | GB (default), MB, TB |

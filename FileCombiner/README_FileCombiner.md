@@ -19,8 +19,14 @@ placed into final_dump
 
 
 ```bash
-python FileCombiner.py --sourceDir ./raw_dump --destinationDir ./final_dump --fileExt gz --destinationFileName liveramp --sizeUnit GB --sizeLimit 4 --temporaryDir ./temp
+python FileCombiner.py --sourceDir ./raw_dump --destinationDir ./final_dump --shardFileDir ./shards --fileExt gz --destinationFileName liveramp --sizeUnit GB --sizeLimit 4 --temporaryDir ./temp
 ```
+
+- ./raw_dump (file A, file B) 
+-- => ./temp (liveramp*datetime*)
+-- move => ./shard (file A, file C)
+- when file size up to 4GB
+- ./temp (liveramp*datetime*) move ./final_dump (liveramp*datetime*) 
 
 ## Arguments
 

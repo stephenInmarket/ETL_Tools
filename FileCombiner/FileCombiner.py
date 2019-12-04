@@ -22,7 +22,6 @@
 
 # @author Stephen J. Lee
 # Given two binary files, open both and combine
-
 import os
 import sys
 import datetime
@@ -271,4 +270,7 @@ def main(argv):
     return
 
 if __name__ == '__main__':
-    main(sys.argv)
+    while True:
+        print (datetime.datetime.now())
+        main(sys.argv)
+        time.sleep(600)
